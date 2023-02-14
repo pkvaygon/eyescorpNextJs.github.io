@@ -67,7 +67,7 @@ const Home = () => {
                                 </video>
                             </div>
                         </div>
-                        <div className="demoBox">
+                        <div className="demoBox">                          
                             <div className="box">
                                 <video preload='metadata' autoPlay playsInline muted loop className='demoVideo'>
                                     <source src={demo5} type="video/mp4" />

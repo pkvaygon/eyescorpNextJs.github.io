@@ -1,12 +1,21 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import { Carousel, Radio } from 'antd';
+
 import logo from '../public/EYESCORP.png'
 import header_back from '../public/omaeva.jpg'
 import whatsapp from '../public/whatsapp.png'
 import telegram from '../public/telegram.png'
 import instagram from '../public/instagram.png'
 const Header = () => {
+    const contentStyle = {
+        height: '160px',
+        color: '#fff',
+        lineHeight: '160px',
+        textAlign: 'center',
+        background: '#364d79',
+    };
     return (
         <>
             <div className='full_header'>
@@ -24,14 +33,24 @@ const Header = () => {
                             </ul>
                         </nav>
                         <div className='header_contacts'>
-                            <Link href='#'><Image  priority='true' src={whatsapp} alt="what's app img" width={30} height={30} /></Link>
-                            <Link href='#'><Image  priority='true' src={telegram} alt="telegram img" width={30} height={30} /></Link>
-                            <Link href='#'><Image  priority='true' src={instagram} alt="instagram img" width={30} height={30} /></Link>
+                            <Link href='#'><Image priority='true' src={whatsapp} alt="what's app img" width={30} height={30} /></Link>
+                            <Link href='#'><Image priority='true' src={telegram} alt="telegram img" width={30} height={30} /></Link>
+                            <Link href='#'><Image priority='true' src={instagram} alt="instagram img" width={30} height={30} /></Link>
                         </div>
                     </div>
                 </header>
-                <div>
-                    <Image placeholder='blur'  src={header_back} style={{ width: '100%', height: '100vh', zIndex: '-1' }} priority alt='header_back' />
+                <div style={{ width: '100%', height: '100vh', zIndex: '-1' }}>
+                    <Carousel autoplay dotPosition='right' className='index_carousel'>
+                        <div>
+                            <Image src={header_back} alt="header_back" style={{ width: '100%', height: '100vh' }} />
+                        </div>
+                        <div>
+                            <Image src={header_back} alt="header_back" style={{ width: '100%', height: '100vh' }} />
+                        </div>
+                        <div>
+                            <Image src={header_back} alt="header_back" style={{ width: '100%', height: '100vh' }} />
+                        </div>
+                    </Carousel>
                 </div>
             </div>
         </>
