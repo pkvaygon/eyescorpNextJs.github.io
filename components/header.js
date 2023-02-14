@@ -13,7 +13,7 @@ const Header = () => {
                 <header className='header'>
                     <div className='header_container'>
                         <div className='logo_div'>
-                            <Image src={logo} alt="logo" width={80} height={80} />
+                            <Image src={logo} alt="logo" width={80} height={80} priority placeholder='blur' />
                         </div>
                         <nav>
                             <ul>
@@ -24,14 +24,14 @@ const Header = () => {
                             </ul>
                         </nav>
                         <div className='header_contacts'>
-                            <Link href='#'><Image src={whatsapp} alt="what's app img" width={30} height={30} /></Link>
-                            <Link href='#'><Image src={telegram} alt="telegram img" width={30} height={30} /></Link>
-                            <Link href='#'><Image src={instagram} alt="instagram img" width={30} height={30} /></Link>
+                            <Link href='#'><Image  priority='true' src={whatsapp} alt="what's app img" width={30} height={30} /></Link>
+                            <Link href='#'><Image  priority='true' src={telegram} alt="telegram img" width={30} height={30} /></Link>
+                            <Link href='#'><Image  priority='true' src={instagram} alt="instagram img" width={30} height={30} /></Link>
                         </div>
                     </div>
                 </header>
                 <div>
-                    <Image src={header_back} style={{ width: '100%', height: '100vh', zIndex: '-1' }} />
+                    <Image placeholder='blur'  src={header_back} style={{ width: '100%', height: '100vh', zIndex: '-1' }} priority alt='header_back' />
                 </div>
             </div>
         </>

@@ -3,19 +3,25 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "type": "module",
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
-    "export": "next export",
     "lint": "next lint",
-    "deploy": "next build && next export && node './scripts/deploy.js"
+    "deploy": "next build && next export && node scripts/deploy.js"
   },
   "dependencies": {
     "@next/font": "13.1.6",
     "eslint": "8.34.0",
     "eslint-config-next": "13.1.6",
     "next": "13.1.6",
+    "next-language-detector": "^1.0.2",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "sharp": "^0.31.3"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.3",
+    "ftp-deploy": "^2.4.3"
   }
 }

@@ -1,5 +1,5 @@
-import dotenv from "dotenv";
-import FtpDeploy from "ftp-deploy";
+import dotenv from 'dotenv'
+import FtpDeploy from 'ftp-deploy'
 
 dotenv.config({ path: "./.env" });
 async function main() {

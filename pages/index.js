@@ -1,20 +1,41 @@
+import About from '@/components/about';
 import Footer from '@/components/footer';
 import Header from '@/components/header';
+import Head from 'next/head';
 import React from 'react';
 
 
 const Home = () => {
-    const demo1 = '/demo1.mp4'
-    const demo3 = '/demo2.mp4'
-    const demo2 = '/demo3.mp4'
-    const demo4 = '/demo4.mp4'
-    const demo5 = '/demo5.mp4'
-    const demo6 = '/demo6.mp4'
-    const demo7 = '/demo7.mp4'
+    const demo1 = '/demo1.webm'
+    const demo3 = '/demo2.webm'
+    const demo2 = '/demo3.webm'
+    const demo4 = '/demo4.webm'
+    const demo5 = '/demo5.webm'
+    const demo6 = '/demo6.webm'
+    const demo7 = '/demo7.webm'
 
     return (
         <>
-            <Header/>
+            <Head>
+                <meta lang="ru" />
+                <meta charSet="UTF-8" />
+                <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
+                <meta httpEquiv="content-language" content="ru" />
+                <meta name="rating" content="adult" />
+                <meta name="keywords" content="Айскорп, айскорп, eyescorp, EYESCORP, магазин сайтов, купить сайт, создать сайт, бишкек сайты" />
+                <meta name="description" content="Строительство жилых домов" key='desc' />
+                <meta property="og:title" content="EyeScorp портфолио сайтов" />
+                <meta name="robot" content="index, follow" />
+                <meta property="og:url" content="url" />
+                <meta property="og:image" content="public\EYESCORP.png" />
+                <meta property="og:description" content="Магазин сайтов EyeScorp" />
+                <meta property="og:image" content="public\EYESCORP.png" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <link rel="shortcut icon" href="./public/favicon.ico" />
+                <title>EYESCORP</title>
+            </Head>
+            <Header />
+            <About/>
             <div className='demosBack'>
                 <div className='container'>
                     <div className='grid'>
@@ -77,7 +98,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <Footer/>
+            <Footer />
         </>
     );
 };
