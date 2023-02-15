@@ -3,7 +3,7 @@
     margin: 0 auto;
 }
 .about_background{
-    background: url('../public/demos-back.jpg');
+    /* background: url('../public/demos-back.jpg'); */
 }
 .about_box {
     width: 100%;

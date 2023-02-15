@@ -15,7 +15,7 @@ const CanvasText = () => {
     useEffect(() => {
         const canvas = canvasText?.current;
         const ctxC2 = canvas.getContext('2d'); 
-        console.log(window.innerWidth, '&', window.screen);
+        console.log(window.innerWidth, '&', window.innerHeight);
         // alert( Math.min(window.screen.availWidth, window.innerWidth))
         // ctxC2.canvas.width =  Math.min(window.screen.availWidth, window.innerWidth) - 18;
         ctxC2.canvas.width =  730;
@@ -140,7 +140,7 @@ const CanvasText = () => {
                         // opacityValue = 0.1;
                         opacityValue = 1 - (distance/23);
                         ctxC2.strokeStyle = 'rgba(155,125,55,' + opacityValue + ')';
-                        ctxC2.lineWidth = 2;
+                        ctxC2.lineWidth = 1;
                         ctxC2.beginPath();
                         ctxC2.moveTo(particleText[a].x, particleText[a].y);
                         ctxC2.lineTo(particleText[b].x, particleText[b].y);
@@ -149,9 +149,6 @@ const CanvasText = () => {
                 }
             }
         }
-    },[])
-    useEffect(() =>{
-    
     },[])
 
 

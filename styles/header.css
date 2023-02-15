@@ -69,3 +69,10 @@ ul li{
     height: 100vh;
     z-index: -1;
 }
+.index__demo{
+    position: absolute;
+    bottom: 0;
+    transform: translateY(-80%);
+    z-index: 30;
+    cursor:grab;
+}
