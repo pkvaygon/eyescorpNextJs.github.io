@@ -56,7 +56,7 @@ const Header = () => {
                             <Image src={header_back} alt="header_back" style={{ width: '100%', height: '100vh', objectFit: 'cover' }} />
                         </div>
                     </Carousel>
-                    <Carousel autoplay swipeToSlide draggable slidesPerRow={4} speed={1200} autoplaySpeed={7500} className='index__demo'>
+                    <Carousel autoplay swipeToSlide draggable slidesPerRow={4} speed={1200} autoplaySpeed={9500} className='index__demo'>
                         <div className="demoBox">
                             <div className="demoVideo">
                                 <div className='box '>

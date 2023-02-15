@@ -119,6 +119,7 @@ const CanvasText = () => {
         canvas.addEventListener("mouseout", () => {
             stopTextAnimate = setTimeout(() => {
                 TextRaf = window.cancelAnimationFrame(TextRaf);
+                ctxC2.clearRect(0,0,canvas.width,canvas.height);
                 TextOn = false;
             }, 1250);
         });
