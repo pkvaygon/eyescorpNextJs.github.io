@@ -1,18 +1,19 @@
 import React, { useEffect, useRef } from 'react';
 
 
-const CanvasText = () => {
-    let mouse = {
-        x: undefined,
-        y: undefined,
-        radius: 200,
-    };
-    const mouseMove = (event) => {
-        mouse.x = event.x;
-        mouse.y = event.y;
-    };
+const CanvasText = ({setFrom}) => {
+   
     const canvasText = useRef(null);
     useEffect(() => {
+        let mouse = {
+            x: undefined,
+            y: undefined,
+            radius: 200,
+        };
+        const mouseMove = (event) => {
+            mouse.x = event.x;
+            mouse.y = event.y;
+        };
         const canvas = canvasText?.current;
         const ctxC2 = canvas.getContext('2d'); 
         console.log(window.innerWidth, '&', window.innerHeight);
@@ -121,11 +122,14 @@ const CanvasText = () => {
                 TextRaf = window.cancelAnimationFrame(TextRaf);
                 ctxC2.clearRect(0,0,canvas.width,canvas.height);
                 TextOn = false;
+                ctxC2.font = '16px Verdana'; //Verdana Silkscreen
+                ctxC2.fillText('Отправить нам заявку', 160,500,canvas.width);
             }, 1250);
         });
         canvas.addEventListener("mouseover", () => {
             TextRaf = window.requestAnimationFrame(animateText);
             TextOn = true;
+            setFrom(true)
             clearTimeout(stopTextAnimate)
         });
     
