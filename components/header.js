@@ -36,9 +36,9 @@ const Header = () => {
                             </ul>
                         </nav>
                         <div className='header_contacts'>
-                            <Link href='#'><Image priority='true' src={whatsapp} alt="what's app img" width={30} height={30} /></Link>
-                            <Link href='#'><Image priority='true' src={telegram} alt="telegram img" width={30} height={30} /></Link>
-                            <Link href='#'><Image priority='true' src={instagram} alt="instagram img" width={30} height={30} /></Link>
+                            <Link href='https://wa.me/996551244141'><Image placeholder='blur' loading='lazy' src={whatsapp} alt="what's app img" width={40} height={40} /></Link>
+                            <Link href='https://t.me/dae_dalss'><Image placeholder='blur' loading='lazy' src={telegram} alt="telegram img" width={40} height={40} /></Link>
+                            <Link href='https://www.instagram.com/dae_dalss'><Image placeholder='blur' loading='lazy' src={instagram} alt="instagram img" width={40} height={40} /></Link>
                         </div>
                     </div>
                 </header>
@@ -47,41 +47,41 @@ const Header = () => {
                     <CanvasText />
                     <Carousel autoplay dotPosition='right' speed={1200} autoplaySpeed={7500} waitForAnimate className='index_carousel'>
                         <div>
-                            <Image src={header_back} alt="header_back" style={{ width: '100%', height: '100vh', objectFit: 'cover' }} />
+                            <Image priority src={header_back} alt="header_back" style={{ width: '100%', height: '100vh', objectFit: 'cover' }} />
                         </div>
                         <div>
-                            <Image src={header_back} alt="header_back" style={{ width: '100%', height: '100vh', objectFit: 'cover' }} />
+                            <Image priority src={header_back} alt="header_back" style={{ width: '100%', height: '100vh', objectFit: 'cover' }} />
                         </div>
                         <div>
-                            <Image src={header_back} alt="header_back" style={{ width: '100%', height: '100vh', objectFit: 'cover' }} />
+                            <Image priority src={header_back} alt="header_back" style={{ width: '100%', height: '100vh', objectFit: 'cover' }} />
                         </div>
                     </Carousel>
                     <Carousel autoplay swipeToSlide draggable slidesPerRow={4} speed={1200} autoplaySpeed={9500} className='index__demo'>
                         <div className="demoBox">
                             <div className="demoVideo">
                                 <div className='box '>
-                                    <Image src={header_back} alt="header_back" style={{ width:'100%', height:'150px' ,objectFit: 'cover' }} />
+                                    <Image priority src={header_back} alt="header_back" style={{ width:'100%', height:'150px' ,objectFit: 'cover' }} />
                                 </div>
                             </div>
                         </div>
                         <div className="demoBox">
                             <div className="demoVideo">
                                 <div className='box '>
-                                    <Image src={header_back} alt="header_back" style={{ width:'100%', height:'150px' ,objectFit: 'cover' }} />
+                                    <Image priority src={header_back} alt="header_back" style={{ width:'100%', height:'150px' ,objectFit: 'cover' }} />
                                 </div>
                             </div>
                         </div>
                         <div className="demoBox">
                             <div className="demoVideo">
                                 <div className='box '>
-                                    <Image src={header_back} alt="header_back" style={{ width:'100%', height:'150px' ,objectFit: 'cover' }} />
+                                    <Image priority src={header_back} alt="header_back" style={{ width:'100%', height:'150px' ,objectFit: 'cover' }} />
                                 </div>
                             </div>
                         </div>
                         <div className="demoBox">
                             <div className="demoVideo">
                                 <div className='box '>
-                                    <Image src={header_back} alt="header_back" style={{ width:'100%', height:'150px' ,objectFit: 'cover' }} />
+                                    <Image priority src={header_back} alt="header_back" style={{ width:'100%', height:'150px' ,objectFit: 'cover' }} />
                                 </div>
                             </div>
                         </div>

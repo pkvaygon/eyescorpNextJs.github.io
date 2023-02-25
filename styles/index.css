@@ -1,5 +1,5 @@
 .demosBack{
-    background: url('/demos-back.jpg');
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url('/demos-back.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
@@ -23,7 +23,7 @@ padding: 50px;
     position: relative;
     font-family: sans-serif;
     width: 300px;
-    height: 250px;
+    height: auto;
   }
   .demoBox::before, .demoBox::after {
     content: "";
@@ -38,7 +38,7 @@ padding: 50px;
     border: 1px solid rgba(255, 255, 255, 0.222);
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
-    border-radius: .7rem;
+    /* border-radius: .7rem; */
     transition: all ease .3s;
   }
   

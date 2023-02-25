@@ -137,7 +137,7 @@ const Cloud = () => {
       return () => {
         null
       }
-    }, [])
+    }, [mouseMove])
 
 
     return (<canvas ref={canvasCloud} id="canvasCloud"></canvas>);

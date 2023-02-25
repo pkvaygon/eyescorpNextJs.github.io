@@ -1,8 +1,10 @@
 import About from '@/components/about';
 import Footer from '@/components/footer';
 import Header from '@/components/header';
+import Portfolio from '@/components/portfolio';
 import Head from 'next/head';
 import React from 'react';
+import Form from './../components/form';
 
 
 const Home = () => {
@@ -23,7 +25,7 @@ const Home = () => {
                 <meta httpEquiv="content-language" content="ru" />
                 <meta name="rating" content="adult" />
                 <meta name="keywords" content="Айскорп, айскорп, eyescorp, EYESCORP, магазин сайтов, купить сайт, создать сайт, бишкек сайты" />
-                <meta name="description" content="Строительство жилых домов" key='desc' />
+                <meta name="description" content="Разработка сайтов под ключ и поддержка" key='desc' />
                 <meta property="og:title" content="EyeScorp портфолио сайтов" />
                 <meta name="robot" content="index, follow" />
                 <meta property="og:url" content="url" />
@@ -42,63 +44,65 @@ const Home = () => {
                         <div className="demoBox">
                             <div className="box">
                                 <video preload='metadata' autoPlay playsInline muted className='demoVideo' loop >
-                                    <source src={demo1} type="video/mp4" />
+                                    <source src={demo1} type="video/webm" />
                                 </video>
                             </div>
                         </div>
                         <div className="demoBox">
                             <div className="box">
                                 <video preload='metadata' autoPlay playsInline muted loop className='demoVideo'>
-                                    <source src={demo2} type="video/mp4" />
+                                    <source src={demo2} type="video/webm" />
                                 </video>
                             </div>
                         </div>
                         <div className="demoBox">
                             <div className="box">
                                 <video preload='metadata' autoPlay playsInline muted loop className='demoVideo'>
-                                    <source src={demo3} type="video/mp4" />
+                                    <source src={demo3} type="video/webm" />
                                 </video>
                             </div>
                         </div>
                         <div className="demoBox">
                             <div className="box">
                                 <video preload='metadata' autoPlay playsInline muted loop className='demoVideo'>
-                                    <source src={demo4} type="video/mp4" />
+                                    <source src={demo4} type="video/webm" />
                                 </video>
                             </div>
                         </div>
                         <div className="demoBox">                          
                             <div className="box">
                                 <video preload='metadata' autoPlay playsInline muted loop className='demoVideo'>
-                                    <source src={demo5} type="video/mp4" />
+                                    <source src={demo5} type="video/webm" />
                                 </video>
                             </div>
                         </div>
                         <div className="demoBox">
                             <div className="box">
                                 <video preload='metadata' autoPlay playsInline muted loop className='demoVideo'>
-                                    <source src={demo6} type="video/mp4" />
+                                    <source src={demo6} type="video/webm" />
                                 </video>
                             </div>
                         </div>
                         <div className="demoBox">
                             <div className="box">
                                 <video preload='metadata' autoPlay playsInline muted loop className='demoVideo'>
-                                    <source src={demo7} type="video/mp4" />
+                                    <source src={demo7} type="video/webm" />
                                 </video>
                             </div>
                         </div>
                         <div className="demoBox">
                             <div className="box">
                                 <video preload='metadata' autoPlay playsInline muted loop className='demoVideo'>
-                                    <source src={demo1} type="video/mp4" />
+                                    <source src={demo1} type="video/webm" />
                                 </video>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <Portfolio/>
             <Footer />
+            {/* <Form/> */}
         </>
     );
 };

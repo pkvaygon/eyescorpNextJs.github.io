@@ -1,0 +1,8 @@
+.portfolio_div {
+    padding: 40px 60px;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+}
