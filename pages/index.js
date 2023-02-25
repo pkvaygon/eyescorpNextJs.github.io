@@ -1,4 +1,5 @@
 import About from '@/components/about';
+import Cloud from '@/components/canvas/Cloud';
 import Footer from '@/components/footer';
 import Header from '@/components/header';
 import Portfolio from '@/components/portfolio';
@@ -39,6 +40,7 @@ const Home = () => {
             <Header />
             <About/>
             <div className='demosBack'>
+                <Cloud/>
                 <div className='container'>
                     <div className='grid'>
                         <div className="demoBox">

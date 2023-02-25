@@ -1,17 +1,18 @@
 import React, { useEffect, useRef } from 'react';
 
 const Cloud = () => {
-    let mouse = {
-        x: undefined,
-        y: undefined,
-        radius: 200,
-    };
-    const mouseMove = (event) => {
-        mouse.x = event.x;
-        mouse.y = event.y;
-    };
+   
     const canvasCloud = useRef(null)
     useEffect(() => {
+        let mouse = {
+            x: undefined,
+            y: undefined,
+            radius: 200,
+        };
+        const mouseMove = (event) => {
+            mouse.x = event.x;
+            mouse.y = event.y;
+        };
         const canvas = canvasCloud.current;
         const ctxC1 = canvas.getContext('2d');
         ctxC1.canvas.width = window.innerWidth;
