@@ -66,15 +66,12 @@ backdrop-filter: blur(7.3px);
 .header__form button:hover{
     background-color: #579FE5;
 }
-.header__form-title{
 
-}
 .header__form-row{
     flex-grow: 1;
     width: 100%;
 }
-.header__form-lable{
-}
+
 .header__form-input{
     width: 100%;
     padding: 8px;
@@ -138,9 +135,6 @@ ul li{
     transform: translateY(-110%);
     z-index: 30;
     cursor:grab;
-}
-.index__demoVideo{
-
 }
 .index__box{
     background-color: #2E2D2E99;

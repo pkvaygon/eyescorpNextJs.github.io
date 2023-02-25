@@ -66,12 +66,12 @@ const Header = () => {
                     <Carousel autoplay swipeToSlide draggable slidesPerRow={4} speed={1200} autoplaySpeed={9500} className='index__demo'>
                     <div className='index__demoBox'>
                             <div className='index__box'>
-                                <Image className='' src={header_back} alt="header_work" style={{ width: '210px', height: '120px', objectFit: 'cover' }} />
+                                <Image priority className='' src={header_back} alt="header_work" style={{ width: '210px', height: '120px', objectFit: 'cover' }} />
                             </div>
                         </div>
                         <div className='index__demoBox'>
                             <div className='index__box'>
-                                <Image className='' src={header_back} alt="header_work" style={{ width: '210px', height: '120px', objectFit: 'cover' }} />
+                                <Image priority className='' src={header_back} alt="header_work" style={{ width: '210px', height: '120px', objectFit: 'cover' }} />
                             </div>
                         </div>
                         <div>
